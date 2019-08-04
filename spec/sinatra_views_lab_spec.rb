@@ -1,4 +1,7 @@
-describe App do
+require 'spec_helper'
+
+
+describe 'App' do
 
   describe 'GET /hello' do
     before do
@@ -27,6 +30,7 @@ describe App do
       expect(last_response.body).to include("Goodbye Joe")
     end
   end
+
   describe 'GET /date' do
     before do
       get '/date'
